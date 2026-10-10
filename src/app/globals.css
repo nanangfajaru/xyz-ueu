@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-jkt-50: #eff6ff;
+  --color-jkt-100: #dbeafe;
+  --color-jkt-500: #2563eb;
+  --color-jkt-600: #1d4ed8;
+  --color-jkt-700: #1e40af;
+  --color-jkt-900: #172554;
+  --color-accent: #f97316;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  color: #0f172a;
+}
+
+@keyframes scanline {
+  0% { top: 0%; }
+  50% { top: 100%; }
+  100% { top: 0%; }
+}
+.scanline {
+  animation: scanline 2.2s ease-in-out infinite;
+}
